@@ -1,0 +1,210 @@
+            body {
+                background-color: #122b7e; /* deep blue */
+                color: #222;
+                margin: 0;
+                font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            h1, h2, h3 {
+                color: #000000; /* orangey yellow */
+                font-size: 14px;
+            }
+
+            a {
+                background-color: inherit;
+                color: #000000; /* soft orange */
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #ffcc80;
+            }
+
+            blockquote {
+                background-color: #e3f2fd; /* light blue */
+                color: #0d47a1; /* strong blue */
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border-left: 10px solid #64b5f6; /* accent blue */
+                padding: 8px 15px;
+                        
+            }
+            /*-----------------------------------------------------------*/
+            #wrapper { /*ID Selector*/
+                background: #fff;
+                padding: 15px;
+                margin: 1% auto;
+                width: 90%;
+                border-radius: 8px;
+            }
+            
+            #banner {
+                padding: 15px;
+                height: 175px;
+                background-color: #fef6e4; /* soft warm white */
+                border-radius: 8px;
+                color: #222;
+            }
+
+            #banner h1 {
+                font-size: 32px;
+                color: #ff9800; /* bold orange */
+            }
+
+            #banner h1 em { /*#Banner is applied as div ID*/
+                font-style: normal;
+                text-decoration: none;
+                color: #333;
+            }
+
+            ul#topnav { /*#topnav is applied as ul (literal HTML element) */
+                 list-style-type: none;
+                margin: 0 0 0 1%;
+                display: table;
+                padding: 0;
+                width: 60%;
+            }
+
+            ul#topnav li {
+                display: table-cell;
+            }
+
+            /* The CSS rule ul#topnav li { display: table-cell; } targets li elements (list items) within an unordered list (ul) that has the ID topnav. It applies the display: table-cell; style to those li elements.
+
+            Here's an explanation of the rule and its properties:
+
+            ul#topnav: This part of the selector targets an unordered list (ul) element with the ID topnav.
+            li: This part of the selector targets list items (li) that are direct children of the targeted unordered list (ul#topnav).
+            display: table-cell;: This property changes the display style of the targeted list items (li) to act as table cells.
+            By setting the display style to table-cell, the list items (li) will behave similarly to cells in a table (<td> elements). This can have several effects on the layout and presentation of the list items. */
+
+            ul#topnav li a {
+                background-color: #ffa000; /* vibrant orange */
+                color: #fff;
+                border: none;
+                display: block;
+                margin-right: 5px;
+                padding: 8px 12px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 4px;
+            }
+
+            ul#topnav li a.active,
+            ul#topnav li a.active:hover {
+                background: #fff;
+                color: #333;
+            }
+
+            ul#topnav li a:hover {
+                background: #ffd54f; /* lighter orange */
+                color: #111;
+            }
+
+            
+            #sidebar, #sidebar-left {
+                background: #fff;
+                float: right;
+                width: 200px;
+                padding: 15px;
+                font-size: 13px;
+            }
+
+            #sidebar-left {
+                float: left;
+            }
+
+            #sidebar h2, #sidebar-left h2 {
+                color: #ff9800;
+                font: normal 16px Arial, sans-serif;
+                border-bottom: 2px solid #000000;
+                padding: 8px 0;
+            }
+
+            #sidebar ul, #sidebar-left ul {
+                list-style: none;
+                padding: 2px;
+                margin: 0;
+            }
+
+            #sidebar ul li, #sidebar-left ul li {
+                padding: 0 0 10px 20px;
+            }
+
+            #sidebar ul li a {
+                background-color: inherit;
+                color: #1565c0; /* strong blue */
+                text-decoration: none;
+                padding: 5px 2px;
+                display: block;
+            }
+
+           
+            /* The CSS selector #sidebar ul li a targets anchor (a) elements within a list item (li) inside an unordered list (ul) that is a child of an element with the ID #sidebar.
+
+            Here is a breakdown of the selector:
+
+            #sidebar: This targets an element with the ID sidebar.
+            ul: This targets unordered lists (ul) that are descendants of the element with the ID sidebar.
+            li: This targets list items (li) that are descendants of the targeted unordered lists (ul).
+            a: This targets anchor (a) elements that are descendants of the targeted list items (li).
+            In combination, the selector #sidebar ul li a targets all anchor (a) elements nested within list items (li) of unordered lists (ul) that are descendants of an element with the ID #sidebar. 
+            This allows you to apply specific styles to links within a particular structure in your HTML document.
+
+            The advantage of using a selector like this is that it allows for precise targeting within a specific part of your webpage, making it easier to style only the elements you intend without affecting other elements elsewhere on the page. */
+            #sidebar ul li a:hover {
+                background-color: #ffb74d; /* orangey */
+                color: #fff;
+            }
+
+            #sidebar ul li a::before {
+                content: "\00BB";
+                color: #ffcc80;
+                padding-right: 5px;
+            }
+            /* The CSS selector #content ul li::before targets the ::before pseudo-element of list items (li) inside an unordered list (ul) that is a child of an element with the ID content.
+
+            Here's a breakdown of the selector:
+            
+            #content: This targets an element with the ID content.
+            ul: This targets unordered lists (ul) that are descendants of the element with the ID content.
+            li: This targets list items (li) that are descendants of the targeted unordered lists (ul).
+            ::before: This targets the ::before pseudo-element of the list items (li) within the targeted unordered lists (ul).
+            The ::before pseudo-element represents a virtual element that is inserted before the content of the selected element (li in this case). 
+            This can be useful for adding decorative content such as icons, bullets, or any other styling elements before the content of each list item.
+
+            Using a selector like this allows you to apply specific styles to the ::before pseudo-element of list items in a precise part of your HTML document. This can be helpful for achieving a consistent design or aesthetic in your lists. */
+
+            #content {
+                text-align: left;
+                padding: 20px;
+                margin-right: 245px;
+            }
+            
+            #content h1 {
+                font: normal 18px Arial, sans-serif;
+                color: #000000;
+            }
+            
+            #content ul {
+                list-style: none;
+            }
+            
+            #content ul li::before {
+                content: "\00BB";
+                color: #000000;
+                padding-right: 5px;
+            }
+            
+            #footer {
+                padding: 10px;
+                height: 20px;
+                color: #fff;
+                font-size: 12px;
+                background: #ff9800; /* orange */
+                clear: both;
+                border-radius: 8px;
+                text-align: center;
+            }
+            
